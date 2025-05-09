@@ -67,6 +67,7 @@ void solve(){
     for(int i=1;i<=n-2;i++){
         ans[i]=temp;
         temp--;
+        
     }
     for(int i=0;i<n;i++) cout<<ans[i]<<" ";
 }
