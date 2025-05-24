@@ -79,5 +79,4 @@ void solve(){
         return;
     }
     cout<<"Tom";
-    
 }
