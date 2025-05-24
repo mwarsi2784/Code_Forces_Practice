@@ -72,7 +72,6 @@ void solve(){
         }
         mn=min(mn,t);
     }
-    
     mx--;
     mx=max(mx,mx2);
     if(sum%2==0 || mx-mn>k){
