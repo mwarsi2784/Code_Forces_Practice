@@ -87,6 +87,7 @@ void solve(){
         for(int j=0;j<m;j++){
             if(a[i][j] && !vis[i][j]){
                 f=false;
+                break;
             }
         }
     }
