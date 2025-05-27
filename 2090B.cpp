@@ -54,5 +54,7 @@ signed main(){
 
 
 void solve(){
-    
+    int n,m;
+    cin>>n>>m;
+    int a[n][n]
 }
