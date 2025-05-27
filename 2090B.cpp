@@ -62,7 +62,8 @@ void solve(){
         for(int j=0;j<m;j++){
             char t;
             cin>>t;
-            a[i]
+            a[i][j]=t;
+            
         }
     }
 }
