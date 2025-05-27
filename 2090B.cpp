@@ -57,5 +57,6 @@ void solve(){
     int n,m;
     cin>>n>>m;
     int a[n][m];
-    int vis[n][n]
+    int vis[n][m];
+    
 }
