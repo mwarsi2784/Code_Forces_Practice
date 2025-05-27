@@ -67,5 +67,5 @@ void solve(){
 
         }
     }
-    
+    for
 }
