@@ -63,7 +63,7 @@ void solve(){
             char t;
             cin>>t;
             a[i][j]=t;
-            
+            vis[i]
         }
     }
 }
