@@ -76,7 +76,7 @@ void solve(){
     }
 
     for(int i=0;i<m;i++){
-        for(int j=0;j<m;j++){
+        for(int j=0;j<n;j++){
             if(!a[i][j]) break;
             vis[i][j]=1;
         }
