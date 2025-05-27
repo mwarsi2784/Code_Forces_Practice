@@ -64,6 +64,7 @@ void solve(){
             cin>>t;
             a[i][j]=t-'0';
             vis[i][j]=0;
+            
         }
     }
 }
