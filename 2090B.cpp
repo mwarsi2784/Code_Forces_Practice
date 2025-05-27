@@ -91,5 +91,5 @@ void solve(){
             }
         }
     }
-    cout<<((f)?"YES":"NO")
+    cout<<((f)?"YES":"NO");
 }
