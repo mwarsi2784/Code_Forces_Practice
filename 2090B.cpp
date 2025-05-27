@@ -81,4 +81,7 @@ void solve(){
             vis[j][i]=1;
         }
     }
+
+    bool f=true;
+    
 }
