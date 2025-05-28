@@ -76,5 +76,6 @@ void solve(){
         score[i]={temp,i};
     }
     sort(score.begin(),score.end());
-    vector<int> final(n*m)
+    vector<int> final(n*m);
+    
 }
