@@ -52,7 +52,7 @@ signed main(){
     return 0;
 }
 
-int find
+int find_score
 
 void solve(){
     int n,m;
