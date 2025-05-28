@@ -60,7 +60,7 @@ void solve(){
     vector<pair<int,int>> score;
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
-            cin>>a[i]
+            cin>>a[i][j];
         }
     }
     
