@@ -66,7 +66,7 @@ void solve(){
     int n,m;
     cin>>n>>m;
     vector<vector<int>> a(n,vector<int>(m));
-    vector<pair<int,int>> score();
+    vector<pair<int,int>> score(n);
     for(int i=0;i<n;i++){
         for(int j=0;j<m;j++){
             cin>>a[i][j];
