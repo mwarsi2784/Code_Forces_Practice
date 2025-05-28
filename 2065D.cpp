@@ -62,7 +62,8 @@ void solve(){
         for(int j=0;j<m;j++){
             cin>>a[i][j];
         }
-        sort(a[i].begin(),a[i].end())
+        sort(a[i].begin(),a[i].end());
+        
     }
     
 }
