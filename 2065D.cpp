@@ -73,7 +73,7 @@ void solve(){
         }
         sort(a[i].begin(),a[i].end());
         int temp=find_score(a[i]);
-        score[i]={}
+        score[i]={temp,i}
     }
     
 }
