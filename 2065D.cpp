@@ -52,7 +52,9 @@ signed main(){
     return 0;
 }
 
-int find_score(vector<int>)
+int find_score(vector<int> a){
+    
+}
 
 void solve(){
     int n,m;
