@@ -83,7 +83,7 @@ void solve(){
     for(int i=0;i<n;i++){
         int ind=score[i].S;
         for(int j=0;j<m;j++){
-            final[i*+j]=a[ind][j];
+            final[i*m+j]=a[ind][j];
         }
     }
     cout<<find_score(final);
