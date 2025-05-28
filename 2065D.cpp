@@ -54,7 +54,8 @@ signed main(){
 
 int find_score(vector<int> a){
     int ans=0;
-    int size=a.size()
+    int size=a.size();
+    for(int i)
 }
 
 void solve(){
