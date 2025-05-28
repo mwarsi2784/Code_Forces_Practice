@@ -57,6 +57,6 @@ void solve(){
     int n,m;
     cin>>n>>m;
     vector<vector<int>> a(n,vector<int>(m));
-    
+    vector<int> 
     
 }
