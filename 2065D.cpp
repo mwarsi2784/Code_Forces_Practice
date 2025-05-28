@@ -52,7 +52,7 @@ signed main(){
     return 0;
 }
 
-int 
+int find
 
 void solve(){
     int n,m;
