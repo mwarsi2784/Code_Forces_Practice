@@ -83,5 +83,5 @@ void solve(){
             final[i*n+j]=a[ind][j];
         }
     }
-    cout<<find_
+    cout<<find_score()
 }
