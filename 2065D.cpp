@@ -78,7 +78,7 @@ void solve(){
     }
     sort(score.begin(), score.end(), [](pair<int,int> &a, pair<int,int> &b){
         return a.first > b.first;
-});
+    });
 
     vector<int> final(n*m);
     for(int i=0;i<n;i++){
