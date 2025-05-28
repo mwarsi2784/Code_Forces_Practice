@@ -56,7 +56,7 @@ signed main(){
 void solve(){
     int n,m;
     cin>>n>>m;
-    vector<vector<int>> a(n,vector<int>());
+    vector<vector<int>> a(n,vector<int>(m));
 
     
 }
