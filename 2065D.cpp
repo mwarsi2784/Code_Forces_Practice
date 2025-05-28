@@ -74,7 +74,7 @@ void solve(){
         sort(a[i].begin(),a[i].end(),greater<int>());
         int temp=find_score(a[i]);
         score[i]={temp,i};
-        deb2(temp,i);
+        // deb2(temp,i);
     }
     sort(score.begin(), score.end(), [](pair<int,int> &a, pair<int,int> &b){
         return a.first > b.first;
