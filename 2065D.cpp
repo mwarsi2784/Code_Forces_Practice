@@ -80,7 +80,7 @@ void solve(){
     for(int i=0;i<n;i++){
         int ind=score[i].S;
         for(int j=0;j<m;j++){
-            final[i*n+j]=a[ind]
+            final[i*n+j]=a[ind][j]
         }
     }
 }
