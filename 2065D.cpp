@@ -76,7 +76,10 @@ void solve(){
         score[i]={temp,i};
         deb2(temp,i);
     }
-    sort(score.begin(),score.end(),greater<int>());
+sort(score.begin(), score.end(), [](pair<int,int> &a, pair<int,int> &b){
+    return a.first > b.first;
+});
+
     vector<int> final(n*m);
     for(int i=0;i<n;i++){
         int ind=score[i].S;
