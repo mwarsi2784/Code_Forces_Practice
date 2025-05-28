@@ -63,7 +63,7 @@ void solve(){
             cin>>a[i][j];
         }
         sort(a[i].begin(),a[i].end());
-        int temp=(a[i]);
+        int temp=find_score(a[i]);
     }
     
 }
