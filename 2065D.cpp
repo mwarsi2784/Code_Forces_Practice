@@ -59,6 +59,7 @@ int find_score(vector<int> a){
         ans=ans+n*a[i];
         n--;
     }
+    
 }
 
 void solve(){
