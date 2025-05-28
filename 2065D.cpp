@@ -55,7 +55,7 @@ signed main(){
 
 void solve(){
     int n,m;
-    cin>.>>m;
+    cin>>n>>m;
     i
     
 }
