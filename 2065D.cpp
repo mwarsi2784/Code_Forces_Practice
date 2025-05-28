@@ -75,5 +75,5 @@ void solve(){
         int temp=find_score(a[i]);
         score[i]={temp,i};
     }
-    sort(scor.begin())
+    sort(scor.begin(),score.end())
 }
