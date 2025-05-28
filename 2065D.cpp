@@ -74,7 +74,7 @@ void solve(){
         sort(a[i].begin(),a[i].end());
         int temp=find_score(a[i]);
         score[i]={temp,i};
-        deb()
+        deb2(temp,i)
     }
     sort(score.begin(),score.end());
     vector<int> final(n*m);
