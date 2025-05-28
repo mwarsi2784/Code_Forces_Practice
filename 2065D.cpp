@@ -59,7 +59,9 @@ void solve(){
     vector<vector<int>> a(n,vector<int>(m));
     vector<pair<int,int>> score;
     for(int i=0;i<n;i++){
-        for(int j=0;j<n)
+        for(int j=0;j<m;j++){
+            
+        }
     }
     
 }
