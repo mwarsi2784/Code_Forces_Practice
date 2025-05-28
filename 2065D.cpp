@@ -53,7 +53,8 @@ signed main(){
 }
 
 int find_score(vector<int> a){
-    
+    int ans=0;
+    int size
 }
 
 void solve(){
