@@ -78,6 +78,6 @@ void solve(){
     sort(score.begin(),score.end());
     vector<int> final(n*m);
     for(int i=0;i<n;i++){
-        int 
+        int ind=
     }
 }
