@@ -83,4 +83,5 @@ void solve(){
             final[i*n+j]=a[ind][j];
         }
     }
+    
 }
