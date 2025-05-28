@@ -71,7 +71,7 @@ void solve(){
         for(int j=0;j<m;j++){
             cin>>a[i][j];
         }
-        int temp=accumulate(a[i]);
+        int temp=accumulate(a[i].begin());
         score[i]={temp,i};
         deb2(temp,i);
     }
