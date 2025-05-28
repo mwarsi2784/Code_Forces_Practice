@@ -79,6 +79,8 @@ void solve(){
     vector<int> final(n*m);
     for(int i=0;i<n;i++){
         int ind=score[i].S;
-        for(int j=0;j<m;j++)
+        for(int j=0;j<m;j++){
+            
+        }
     }
 }
