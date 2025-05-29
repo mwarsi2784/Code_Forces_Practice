@@ -63,8 +63,8 @@ void solve(){
     for(int i=0;i<n;i++){
         if(s[i]!=curr){
             change++;
-            curr=curr^0^1;
         }
+        curr=s[i];
     }
     if(change>=3){
         change=change-2;
