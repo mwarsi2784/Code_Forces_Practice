@@ -75,7 +75,6 @@ void solve(){
         int pos=hurdle[i].F-1;
         while(curr<m && powerups[curr].F<=pos){
             power.insert(powerups[curr].S);
-            // deb(powerups[curr].F);
             curr++;
         }
         int reqjump=hurdle[i].S-hurdle[i].F+2;
