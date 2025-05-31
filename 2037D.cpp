@@ -78,7 +78,6 @@ void solve(){
             curr++;
         }
         int reqjump=hurdle[i].S-hurdle[i].F+2;
-        // deb(reqjump);
         while(step<reqjump && (!power.empty())){
             auto it = --power.end();
             step=step+(*it);
