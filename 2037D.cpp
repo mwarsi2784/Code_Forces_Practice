@@ -59,7 +59,7 @@ void solve(){
     int step=1;
     vector<pair<int,int>> hurdle(n),powerups(m);
     for(int i=0;i<n;i++){
-        int t1,t2;
+        int t1, t2;
         cin>>t1>>t2;
         hurdle[i]={t1,t2};
     }
