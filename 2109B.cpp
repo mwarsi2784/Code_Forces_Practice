@@ -64,7 +64,9 @@ int fun(int a){
 void solve(){
     int n,m,a,b;
     cin>>n>>m>>a>>b;
+    
     if((n-a+1)<a) a=n-a+1;
     if((m-b+1)<b) b=m-b+1;
+
     cout<<min(1+fun(a)+fun(m),1+fun(b)+fun(n));
 }
