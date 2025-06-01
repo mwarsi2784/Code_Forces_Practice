@@ -52,7 +52,19 @@ signed main(){
     return 0;
 }
 
+int fun(int a){
+    int ans=0;
+    while(a>1){
+        a=(a+1)/2;
+        ans++;
+    }
+    return ans;
+}
 
 void solve(){
-    
+    int n,m,a,b;
+    cin>>n>>m>>a>>b;
+    if((n-a+1)<a) a=n-a+1;
+    if((m-b+1)<b) b=m-b+1;
+    cout<<min(1+fun(a)+fun(m),1+fun(b)+fun(n));
 }
