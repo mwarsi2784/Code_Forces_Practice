@@ -69,6 +69,14 @@ void solve(){
         }
     }
     for(int i=0;i<even.size();i++){
-        if(even[i]!=)
+        if(even[i]!=4){
+            cout<<even[i]<<" ";
+        }
+    }
+    cout<<"4 5 ";
+    for(int i=0;i<odd.size();i++){
+        if(even[i]!=4){
+            cout<<even[i]<<" ";
+        }
     }
 }
