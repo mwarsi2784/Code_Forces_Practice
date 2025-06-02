@@ -60,4 +60,10 @@ void solve(){
         cout<<"-1";
         return;
     }
+    vector<int> even,odd;
+    for(int i=1;i<=n;i++){
+        if(i&1){
+            odd.pb(i)
+        }
+    }
 }
