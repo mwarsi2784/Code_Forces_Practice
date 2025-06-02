@@ -63,7 +63,12 @@ void solve(){
     vector<int> even,odd;
     for(int i=1;i<=n;i++){
         if(i&1){
-            odd.pb(i)
+            odd.pb(i);
+        }else{
+            even.pb(i);
         }
+    }
+    for(int i=0;i<even.size();i++){
+        if(even[i]!=)
     }
 }
