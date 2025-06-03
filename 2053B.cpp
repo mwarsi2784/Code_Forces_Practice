@@ -56,5 +56,6 @@ signed main(){
 void solve(){
     int n;
     cin>>n;
+    
     vector<char> ans(n,0);
 }
