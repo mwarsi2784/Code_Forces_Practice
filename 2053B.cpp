@@ -56,6 +56,13 @@ signed main(){
 void solve(){
     int n;
     cin>>n;
-    
+    ordered_set<int> prob;
     vector<char> ans(n,0);
+    for(int i=0;i<n;i++){
+        int t1,t2;
+        cin>>t1>>t2;
+        if(t1==t2){
+            prob.insert(t1);
+        }
+    }
 }
