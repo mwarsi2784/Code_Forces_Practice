@@ -11,6 +11,12 @@ using namespace __gnu_pbds;
 template<typename T>
 using ordered_set = tree<T,null_type,less<T>,rb_tree_tag,tree_order_statistics_node_update>; //find_by_order() order_of_key()
 
+template<typename T>
+int count_in_range(const ordered_set<T>& os, T a, T b) {
+    if (a > b) std::swap(a, b); // ensure a <= b
+    return os.order_of_key(b + 1) - os.order_of_key(a);
+}
+
 
 //===========================================================================
 #define int  long long
@@ -73,6 +79,10 @@ void solve(){
         int req=a[i].S-a[i].F+1;
         if(a[i].F==a[i].S && f[a[i].F]==1){
             ans[i]='1';
-        }else if()
+        }else if(a[i].F==a[i].S && f[a[i].F]>=1){
+            ans[i]='0';
+        }else{
+
+        }
     }
 }
