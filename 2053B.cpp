@@ -57,13 +57,22 @@ void solve(){
     int n;
     cin>>n;
     ordered_set<int> prob;
-    
-    vector<char> ans(n,0);
+    vector<pair<int,int>> a(n);
+    vector<char> ans(n);
+    map<int,int> f;
     for(int i=0;i<n;i++){
         int t1,t2;
         cin>>t1>>t2;
         if(t1==t2){
             prob.insert(t1);
+            f[t1]++;
         }
+        a[i]={t1,t2};
+    }
+    for(int i=0;i<n;i++){
+        int req=a[i].S-a[i].F+1;
+        if(a[i].F==a[i].S && f[a[i].F]==1){
+            ans[i]='1';
+        }else if()
     }
 }
