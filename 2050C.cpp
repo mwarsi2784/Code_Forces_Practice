@@ -72,5 +72,7 @@ void solve(){
         return;
     }
     int req=sum%9;
-    req=9-req;
+    int a=9-req;
+    int x=f['2'];
+    int y=f['3'];
 }
