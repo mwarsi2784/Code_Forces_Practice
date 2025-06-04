@@ -83,6 +83,7 @@ void solve(){
         return;
     }
     int req=sum%9;
+    deb2(s,req);
     int x=f['2'];
     int y=f['3'];
     if(canBeDivisibleBy9(req,x,y)){
