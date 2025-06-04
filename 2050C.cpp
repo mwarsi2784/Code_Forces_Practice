@@ -71,7 +71,7 @@ void solve(){
     int sum=0;
     map<char,int> f;
     for(int i=0;i<n;i++){
-        sum=sum+s[i]-49;
+        sum=sum+s[i]-'0';
         if(s[i]=='2'){
             f[s[i]]++;
         }else if(s[i]=='3'){
@@ -83,9 +83,11 @@ void solve(){
         return;
     }
     int req=sum%9;
-    deb2(s,req);
+    // deb2(s,req);
+    // deb2(s,sum);
     int x=f['2'];
     int y=f['3'];
+    y=y
     if(canBeDivisibleBy9(req,x,y)){
         cout<<"YES";
         return;
