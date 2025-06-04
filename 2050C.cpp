@@ -83,11 +83,8 @@ void solve(){
         return;
     }
     int req=sum%9;
-    // deb2(s,req);
-    // deb2(s,sum);
     int x=f['2'];
     int y=f['3'];
-    y=y
     if(canBeDivisibleBy9(req,x,y)){
         cout<<"YES";
         return;
