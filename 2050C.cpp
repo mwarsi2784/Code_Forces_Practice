@@ -71,4 +71,6 @@ void solve(){
         cout<<"YES";
         return;
     }
+    int req=sum%9;
+    req=9-req;
 }
