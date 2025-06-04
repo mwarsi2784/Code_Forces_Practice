@@ -52,6 +52,17 @@ signed main(){
     return 0;
 }
 
+bool canBeDivisibleBy9(int a, int x_max, int y_max) {
+    for (int i = 0; i <= x_max; ++i) {
+        for (int j = 0; j <= y_max; ++j) {
+            int sum = a + 2 * i + 6 * j;
+            if (sum % 9 == 0) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
 
 void solve(){
     string s;
