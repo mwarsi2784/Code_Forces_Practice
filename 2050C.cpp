@@ -83,7 +83,11 @@ void solve(){
         return;
     }
     int req=sum%9;
-    int a=9-req;
     int x=f['2'];
     int y=f['3'];
+    if(canBeDivisibleBy9(req,x,y)){
+        cout<<"YES";
+        return;
+    }
+    cout<<"NO";
 }
