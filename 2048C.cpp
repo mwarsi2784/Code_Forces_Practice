@@ -87,6 +87,7 @@ void solve(){
         if(a^temp>ans){
             l1=i+1;
             r1=l1+l;
+            ans=a^temp;
         }
     }
     cout<<1<<" "<<n<<" "<<l1<<" "<<r1;
