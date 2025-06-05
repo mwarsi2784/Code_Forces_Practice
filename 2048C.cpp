@@ -73,6 +73,7 @@ void solve(){
     int l=n-firstzero;
     int l1,r1;
     for(int i=0;i<firstzero;i++){
+        string temp;
         
     }
     cout<<1<<" "<<n<<" "<<l1<<" "<<r1;
