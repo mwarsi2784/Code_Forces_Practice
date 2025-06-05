@@ -72,9 +72,14 @@ void solve(){
 
     int l=n-firstzero;
     int l1,r1;
+    string ans="";
     for(int i=0;i<firstzero;i++){
-        string temp;
-        
+        string temp=s.substr(i,l);
+        if(fun(s,temp,ans)){
+            l1=i+1;
+            r1=l1+l-1;
+            ans=temp;
+        }
     }
     cout<<1<<" "<<n<<" "<<l1<<" "<<r1;
 }
