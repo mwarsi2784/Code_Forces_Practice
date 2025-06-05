@@ -86,7 +86,7 @@ void solve(){
         int temp=binaryToDecimal(s.substr(i,l));
         if(a^temp>ans){
             l1=i+1;
-            r1=l1+l;
+            r1=l1+l-1;
             ans=a^temp;
         }
     }
