@@ -52,7 +52,7 @@ signed main(){
     return 0;
 }
 
-int binaryToDecimal(const std::string& binaryStr) {
+int binaryToDecimal(string binaryStr) {
     int result = 0;
     for (char bit : binaryStr) {
         result = result * 2 + (bit - '0');
@@ -82,7 +82,6 @@ void solve(){
     int ans=-1;
     int a=binaryToDecimal(s);
     int l1,r1;
-    // deb2(s,l);
     for(int i=0;i<firstzero;i++){
         int temp=binaryToDecimal(s.substr(i,l));
         if(a^temp>ans){
