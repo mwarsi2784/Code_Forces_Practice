@@ -70,6 +70,5 @@ void solve(){
     }
     firstzero++;
     int l=n-firstzero+1;
-    
-    //cout<<1<<" "<<n<<" ";
+    cout<<1<<" "<<n<<" "<<"1 "<<l;
 }
