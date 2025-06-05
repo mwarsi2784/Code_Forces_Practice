@@ -80,14 +80,14 @@ void solve(){
 
     int l=n-firstzero;
     int ans=-1;
-    deb2(s,n);
-    deb2(l,firstzero);
+    // deb2(s,n);
+    // deb2(l,firstzero);
     int a=binaryToDecimal(s);
     int l1,r1;
     for(int i=0;i<firstzero;i++){
         int temp=binaryToDecimal(s.substr(i,l));
         if((a^temp)>ans){
-            deb2(ans,(a^temp));
+            // deb2(ans,(a^temp));
             l1=i+1;
             r1=l1+l-1;
             ans=a^temp;
