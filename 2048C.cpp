@@ -77,12 +77,13 @@ void solve(){
         cout<<1<<" "<<n<<" 1 1";
         return;
     }
-    firstzero++;
-    int l=n-firstzero+1;
+
+    int l=n-firstzero;
     int ans=-1;
     int a=binaryToDecimal(s);
     int l1,r1;
-    for(int i=0;i<firstzero-1;i++){
+    // deb2(s,l);
+    for(int i=0;i<firstzero;i++){
         int temp=binaryToDecimal(s.substr(i,l));
         if(a^temp>ans){
             l1=i+1;
