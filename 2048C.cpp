@@ -54,5 +54,18 @@ signed main(){
 
 
 void solve(){
-    int 
+    string s;
+    cin>>s;
+    int n=s.size();
+    int firstzero=-1;
+    for(int i=0;i<n;i++){
+        if(s[i]=='0'){
+            firstzero=i;
+            break;
+        }
+    }
+    if(firstzero==-1)
+
+
+    //cout<<1<<" "<<n<<" ";
 }
