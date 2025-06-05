@@ -79,11 +79,15 @@ void solve(){
     }
     firstzero++;
     int l=n-firstzero+1;
-    int ans=0;
+    int ans=-1;
     int a=binaryToDecimal(s);
+    int l1,r1;
     for(int i=0;i<firstzero-1;i++){
         int temp=binaryToDecimal(s.substr(i,l));
-        if(a^temp>ans)
+        if(a^temp>ans){
+            l1=i+1;
+            r1=l1+l;
+        }
     }
-    cout<<1<<" "<<n<<" "<<"1 "<<l;
+    cout<<1<<" "<<n<<" "<<l1<<" "<<r1;
 }
