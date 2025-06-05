@@ -80,6 +80,7 @@ void solve(){
 
     int l=n-firstzero;
     int ans=-1;
+    deb2(s,n)
     int a=binaryToDecimal(s);
     int l1,r1;
     for(int i=0;i<firstzero;i++){
