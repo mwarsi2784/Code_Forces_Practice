@@ -64,8 +64,12 @@ void solve(){
             break;
         }
     }
-    if(firstzero==-1)
-
-
+    if(firstzero==-1){
+        cout<<1<<" "<<n<<" 1 1";
+        return;
+    }
+    firstzero++;
+    int l=n-
+    
     //cout<<1<<" "<<n<<" ";
 }
