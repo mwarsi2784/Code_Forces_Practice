@@ -69,7 +69,7 @@ void solve(){
         return;
     }
     firstzero++;
-    int l=n-
+    int l=n-firstzero+1;
     
     //cout<<1<<" "<<n<<" ";
 }
