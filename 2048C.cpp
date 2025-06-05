@@ -54,7 +54,9 @@ signed main(){
 
 
 bool fun(const std::string& s, const std::string& temp, const std::string& ans) {
-    if(ans=="")
+    if(ans==""){
+        return true;
+    }
     int lenS = s.size();
     int lenX = temp.size();
     std::string paddedTemp(lenS - lenX, '0');
