@@ -53,18 +53,16 @@ signed main(){
 }
 
 
-bool isBetterXor(const std::string& s, const std::string& temp, const std::string& ans) {
+bool fun(const std::string& s, const std::string& temp, const std::string& ans) {
+    if(ans=="")
     int lenS = s.size();
-    int lenX = temp.size(); // same for temp and ans
-
-    // Left pad temp and ans to match length of s
+    int lenX = temp.size();
     std::string paddedTemp(lenS - lenX, '0');
     paddedTemp += temp;
 
     std::string paddedAns(lenS - lenX, '0');
     paddedAns += ans;
 
-    // XOR bit-by-bit and compare the result as binary strings (MSB to LSB)
     for (int i = 0; i < lenS; i++) {
         char xorTemp = (s[i] != paddedTemp[i]) ? '1' : '0';
         char xorAns  = (s[i] != paddedAns[i])  ? '1' : '0';
@@ -72,8 +70,6 @@ bool isBetterXor(const std::string& s, const std::string& temp, const std::strin
         if (xorTemp > xorAns) return true;
         if (xorTemp < xorAns) return false;
     }
-
-    // If all bits are equal
     return false;
 }
 
@@ -95,7 +91,7 @@ void solve(){
     }
 
     int l=n-firstzero;
-    int l1,r1;
+    int l1=0,r1=0;
     string ans="";
     for(int i=0;i<firstzero;i++){
         string temp=s.substr(i,l);
