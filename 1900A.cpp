@@ -70,8 +70,9 @@ void solve(){
             max_dot=max(max_dot,curr);
             curr=0;
         }
+        max_dot=max(max_dot,curr);
     }
-
+    
     if(max_dot>=3){
         cout<<"2";
         return;
