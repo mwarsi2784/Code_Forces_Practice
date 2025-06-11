@@ -58,18 +58,24 @@ void solve(){
     cin>>n;
     string s;
     cin>>s;
-    int dot=0;
-    int max_dot;
+    int curr=0;
+    int max_dot=0;
     int dot_count=0;
     for(int i=0;i<n;i++){
-        if(s[i]=='.') dot++;
+        if(s[i]=='.'){
+            curr++;
+            dot_count++;
+        }
         else if(s[i]=='#'){
-            max_dot=max(max_dot,dot);
-            dot=0;
+            max_dot=max(max_dot,curr);
+            curr=0;
         }
     }
+
     if(max_dot>=3){
         cout<<"2";
         return;
     }
+
+    cout<<dot_count;
 }
