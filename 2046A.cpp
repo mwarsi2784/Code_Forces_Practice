@@ -58,14 +58,16 @@ void solve(){
     cin>>n;
     int a[2][n];
     int sum=0;
+    int min_best=-1000000000;
     for(int i=0;i<2;i++){
         for(int j=0;j<n;j++){
             cin>>a[i][j];
         }
     }
-    for(int i=0;i<2;i++){
-        for(int j=0;j<n;j++){
-            
-        }
+    for(int j=0;j<n;j++){
+        sum=sum+max(a[0][j],a[1][j]);
+        min_best=max(min_best,min(a[0][j],a[1][j]));
     }
+    cout<<sum+min_best;
 }
+
