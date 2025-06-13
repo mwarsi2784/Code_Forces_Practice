@@ -73,7 +73,10 @@ void solve(){
         return;
     }
     if(s.size()==2){
-        if(abs(f[*s.begin()]-f[*(--s.end())])<=1)
+        if(abs(f[*s.begin()]-f[*(--s.end())])<=1){
+            cout<<"Yes";
+            return;
+        }
     }
     cout<<"No";
     
