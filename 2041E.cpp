@@ -71,5 +71,5 @@ void solve(){
     }
     cout<<"3\n";
     cout<<ans[0]<<" "<<ans[1]<<" "<<ans[2];
-    
+
 }
