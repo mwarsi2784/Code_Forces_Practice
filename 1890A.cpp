@@ -57,22 +57,23 @@ void solve(){
     int n;
     cin>>n;
     int a[n];
-    map<int,int> f;
+    set<int> s;
     for(int i=0;i<n;i++){
         cin>>a[i];
-        f[a[i]]++;
+        s.insert(a[i]);
     }
     if(n==2){
         cout<<"Yes";
         return;
     }
-    if(a[0]==a[n-1]){
+    if(s.size()==1){
         cout<<"Yes";
         return;
     }
+    if(s.size()==2){
+        cout<<"Yes";
+        return;
+    }
+    cout<<"No";
     
-    sort(a,a+n);
-    int sum=a[0]+a[n-1];
-    int ans[n];
-    ans[0]=a[0];
 }
