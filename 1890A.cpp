@@ -58,9 +58,11 @@ void solve(){
     cin>>n;
     int a[n];
     set<int> s;
+    map<int,int> f;
     for(int i=0;i<n;i++){
         cin>>a[i];
         s.insert(a[i]);
+        f[a[i]]++;
     }
     if(n==2){
         cout<<"Yes";
@@ -71,8 +73,7 @@ void solve(){
         return;
     }
     if(s.size()==2){
-        cout<<"Yes";
-        return;
+        if(abs(f[*s.begin()]-f[*(--s.end())])<=1)
     }
     cout<<"No";
     
