@@ -58,6 +58,7 @@ void solve(){
     cin>>x>>m;
     int ans=0;
     for(int y=1;y<=m && y<=2*x;y++){
+        if(x==y) continue;
         int t =(x^y);
         if((x%t==0 || y%t==0) ) ans++;
     }
