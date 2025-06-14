@@ -54,5 +54,8 @@ signed main(){
 
 
 void solve(){
-    int n;
+    int n,a,b;
+    cin>>a>>b;
+    n=a+b;
+    
 }
