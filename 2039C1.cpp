@@ -54,5 +54,12 @@ signed main(){
 
 
 void solve(){
-    int 
+    int x,m;
+    cin>>x>>m;
+    int ans=0;
+    for(int y=1;y<=m && y<=2*x;y++){
+        int t =x^y;
+        if(t%x==0 || ==0) ans++;
+    }
+    cout<<ans;
 }
