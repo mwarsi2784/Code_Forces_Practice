@@ -57,5 +57,15 @@ void solve(){
     int n,a,b;
     cin>>a>>b;
     n=a+b;
-    
+    int l=1;
+    int r=1000000000;
+    while(l<r){
+        int mid=(l+r)/2;
+        if(2*n<(mid*mid+mid)){
+            r=mid;
+        }else{
+            l=mid+1;
+        }
+    }
+    cout<<l-1;
 }
