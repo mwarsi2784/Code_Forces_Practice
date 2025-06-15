@@ -52,14 +52,24 @@ signed main(){
     return 0;
 }
 
-bool fun(string s,string x){
-
+bool isSubstring(const std::string& s, const std::string& x) {
+    return x.find(s) != std::string::npos;
 }
+
 void solve(){
     int n,m;
     cin>>n>>m;
     string s,x;
     cin>>x>>s;
     int ans=0;
-
+    for(int i=0;i<12;i++){
+        if(isSubstring(s,x)){
+            cout<<ans;
+            return;
+        }else{
+            ans++;
+            x=x+x;
+        }
+    }
+    cout<<"-1";
 }
