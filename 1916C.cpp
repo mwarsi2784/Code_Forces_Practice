@@ -63,6 +63,15 @@ void solve(){
     for(int i=0;i<n;i++){
         sum+=a[i];
         if(a[i]&1) oc++;
+        if(i==0){
+            cout<<a[0]<<" ";
+            continue;
+        }
+        if(oc%3==1){
+            cout<<sum-(oc/3)-1<<" ";
+        }else{
+            cout<<sum-oc/3<<" ";
+        }
         
     }
     
