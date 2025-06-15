@@ -61,11 +61,19 @@ void solve(){
     int sum=0;
     cout<<a[0]<<" ";
     sum=a[0];
+    int oddcount=0;
+    if(a[0]&1){
+        oddcount++;
+    }
     for(int i=1;i<n;i++){
         sum+=a[i];
         if(a[i]&1){
+            oddcount++;
+        }
+        if(oddcount&1){
             cout<<sum-1<<" ";
-        }else{
+        }
+        else{
             cout<<sum<<" ";
         }
     }
