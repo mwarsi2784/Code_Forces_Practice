@@ -62,7 +62,7 @@ void solve(){
     string s,x;
     cin>>x>>s;
     int ans=0;
-    for(int i=0;i<12;i++){
+    for(int i=0;n<=x.size();i++){
         if(isSubstring(s,x)){
             cout<<ans;
             return;
