@@ -70,9 +70,8 @@ void solve(){
         if(a[i]&1){
             oddcount++;
         }
-        if(oddcount&1){
+        if((oddcount&1)){
             cout<<sum-1<<" ";
-            oddcount--;
         }
         else{
             cout<<sum<<" ";
