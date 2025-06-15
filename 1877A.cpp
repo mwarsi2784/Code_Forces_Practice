@@ -58,9 +58,10 @@ void solve(){
     cin>>n;
     int sum=0;
     int t;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         cin>>t;
         sum+=t;
     }
+   // deb(sum);
     cout<<(-1)*sum;
 }
