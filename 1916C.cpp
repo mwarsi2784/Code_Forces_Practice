@@ -72,6 +72,7 @@ void solve(){
         }
         if(oddcount&1){
             cout<<sum-1<<" ";
+            oddcount--;
         }
         else{
             cout<<sum<<" ";
