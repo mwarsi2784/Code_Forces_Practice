@@ -56,7 +56,7 @@ signed main(){
 void solve(){
     int n;
     cin>>n;
-    vector<pair<int,pair<int,int>> a;
+    vector<pair<int,pair<int,int>>> a;
     int t;
     for(int i=0;i<n;i++){
         cin>>t;
@@ -76,7 +76,6 @@ void solve(){
     bool three=false;
     vector<bool> day(n,false);
     int ans=0;
-    int cnt=0;
     for(int i=3*n-1;i>=0;i--){
         int x=a[i].F;
         int y=a[i].S.F;
@@ -85,19 +84,16 @@ void solve(){
             one =true;
             ans+=x;
             day[z]=true;
-            deb2(x,y);
         }
-        else if((y==2) && (two==false)){
+        else if((y==2) && (two==false) && (day[z]==false)){
             two =true;
             ans+=x;
             day[z]=true;
-            deb2(x,y);
         }
-        else if((y==3) && (three==false)){
+        else if((y==3) && (three==false) && (day[z]==false)){
             three =true;
             ans+=x;
             day[z]=true;
-            deb2(x,y);
         }
     }
     cout<<ans;
