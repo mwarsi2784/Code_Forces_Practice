@@ -83,6 +83,7 @@ void solve(){
             one =true;
             ans+=x;
             cnt++;
+            deb2(x,y);
         }
         else if((y==2) && (two==false)){
             two =true;
