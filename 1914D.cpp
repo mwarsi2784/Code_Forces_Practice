@@ -75,20 +75,24 @@ void solve(){
     bool two=false;
     bool three=false;
     int ans=0;
+    int cnt=0;
     for(int i=3*n-1;i>=0;i--){
         int x=a[i].F;
         int y=a[i].S;
         if((y==1) && (one==false)){
             one =true;
             ans+=x;
+            cnt++;
         }
         else if((y==2) && (two==false)){
             two =true;
             ans+=x;
+            cnt++;
         }
         else if((y==3) && (three==false)){
             three =true;
             ans+=x;
+            cnt++;
         }
     }
     cout<<ans;
