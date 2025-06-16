@@ -56,16 +56,28 @@ signed main(){
 void solve(){
     int n;
     cin>>n;
-    vector<pair<int,int>> a()
+    vector<pair<int,int>> a;
+    int t;
     for(int i=0;i<n;i++){
-        cin>>a[i];
+        cin>>t;
+        a.pb({t,1});
     }
    for(int i=0;i<n;i++){
-        cin>>b[i];
+        cin>>t;
+        a.pb({t,2});
     }
    for(int i=0;i<n;i++){
-        cin>>c[i];
-        mx[i]=max({a[i],b[i],c[i]});
+        cin>>t;
+        a.pb({t,3});
     }
-    
+    sort(a.begin(),a.end(),greater<int>());
+    bool one=false;
+    bool two=false;
+    bool three=false;
+    int ans=0;
+    for(int i=0;i<3*n;i++){
+        int x=a.first;
+        int y=a.S;
+
+    }
 }
