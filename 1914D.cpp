@@ -57,43 +57,21 @@ void solve(){
     int n;
     cin>>n;
     int t;
+    vector<pair<int,int>> a(n),b(n),c(n);
+    int a[n];
+    int b[n];
+    int c[n];
     for(int i=0;i<n;i++){
         cin>>t;
-        a.pb({t,{1,i}});
+        a[i]={t,1};
     }
    for(int i=0;i<n;i++){
         cin>>t;
-        a.pb({t,{2,i}});
+        b[i]={t,2};
     }
    for(int i=0;i<n;i++){
         cin>>t;
-        a.pb({t,{3,i}});
-    }
-    sort(a.begin(),a.end());
-    bool one=false;
-    bool two=false;
-    bool three=false;
-    vector<bool> day(n,false);
-    int ans=0;
-    for(int i=3*n-1;i>=0;i--){
-        int x=a[i].F;
-        int y=a[i].S.F;
-        int z=a[i].S.S;
-        if((y==1) && (one==false) && (day[z]==false)){
-            one =true;
-            ans+=x;
-            day[z]=true;
-        }
-        else if((y==2) && (two==false) && (day[z]==false)){
-            two =true;
-            ans+=x;
-            day[z]=true;
-        }
-        else if((y==3) && (three==false) && (day[z]==false)){
-            three =true;
-            ans+=x;
-            day[z]=true;
-        }
+        c[i]={t,3};
     }
     cout<<ans;
 }
