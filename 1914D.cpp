@@ -57,21 +57,32 @@ void solve(){
     int n;
     cin>>n;
     int t;
-    vector<pair<int,int>> a(n),b(n),c(n);
+    vector<pair<int,pair<int,int>>> a(n),b(n),c(n),d;
     int a[n];
     int b[n];
     int c[n];
     for(int i=0;i<n;i++){
         cin>>t;
-        a[i]={t,1};
+        a[i]={t,{1,i}};
     }
    for(int i=0;i<n;i++){
         cin>>t;
-        b[i]={t,2};
+        b[i]={t,{2,i}};
     }
    for(int i=0;i<n;i++){
         cin>>t;
-        c[i]={t,3};
+        c[i]={t,{3,i}};
     }
-    
+    sort(a.begin(),a.end());
+    sort(b.begin(),b.end());
+    sort(c.begin(),c.end());
+    for(int i=n-1;i>=n-3;i--){
+        d.pb(a[i]);
+    }
+    for(int i=n-1;i>=n-3;i--){
+        d.pb(a[i]);
+    }
+    for(int i=n-1;i>=n-3;i--){
+        d.pb(a[i]);
+    }
 }
