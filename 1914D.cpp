@@ -52,12 +52,16 @@ signed main(){
     return 0;
 }
 
+bool cmp (pair<int,pair<int,int>> a, pair<int,pair<int,int>> b){
+    return a.F<b.F;
+}
+
 
 int fun(vector<pair<int,pair<int,int>>> d){
     int ans=0;
     for(int i=0;i<9;i++){
         for(int j=0;j<9;j++){
-            for(int k=0;k<n;k++){
+            for(int k=0;k<9;k++){
                 int day1=d[i].S.S;
                 int day2=d[j].S.S;
                 int day3=d[k].S.S;
@@ -78,9 +82,6 @@ void solve(){
     cin>>n;
     int t;
     vector<pair<int,pair<int,int>>> a(n),b(n),c(n),d;
-    int a[n];
-    int b[n];
-    int c[n];
     for(int i=0;i<n;i++){
         cin>>t;
         a[i]={t,{1,i}};
