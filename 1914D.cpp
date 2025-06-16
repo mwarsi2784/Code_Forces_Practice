@@ -54,17 +54,23 @@ signed main(){
 
 
 int fun(vector<pair<int,pair<int,int>>> d){
-
+    int ans=0;
     for(int i=0;i<9;i++){
         for(int j=0;j<9;j++){
             for(int k=0;k<n;k++){
                 int day1=d[i].S.S;
-                int day1=d[j].S.S;
-                int day1=d[k].S.F;
-                int type=d[i].S.F
+                int day2=d[j].S.S;
+                int day3=d[k].S.S;
+                int type1=d[i].S.F;
+                int type2=d[j].S.F;
+                int type3=d[k].S.F;
+                if(day1!=day2 && day2!=day3 && type1!=type2 && type2!=type3 && type3!=type1 && day3!=day1){
+                    ans=max(ans,d[i].F+d[j].F+d[k].F);
+                }
             }
         }
     }
+    return ans;
 }
 
 void solve(){
