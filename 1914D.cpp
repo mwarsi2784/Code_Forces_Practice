@@ -70,14 +70,26 @@ void solve(){
         cin>>t;
         a.pb({t,3});
     }
-    sort(a.begin(),a.end(),greater<int>());
+    sort(a.begin(),a.end());
     bool one=false;
     bool two=false;
     bool three=false;
     int ans=0;
-    for(int i=0;i<3*n;i++){
-        int x=a.first;
-        int y=a.S;
-
+    for(int i=;i<3*n;i++){
+        int x=a[i].F;
+        int y=a[i].S;
+        if(y==1 && one==false){
+            one =true;
+            ans+=x;
+        }
+        else if(y==2 && two==false){
+            two =true;
+            ans+=x;
+        }
+        else if(y==3 && three==false){
+            three =true;
+            ans+=x;
+        }
     }
+    cout<<ans;
 }
