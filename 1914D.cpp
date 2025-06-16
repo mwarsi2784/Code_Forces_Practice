@@ -56,10 +56,7 @@ signed main(){
 void solve(){
     int n;
     cin>>n;
-    int a[n];
-    int b[n];
-    int c[n];
-    int mx[n];
+    vector<pair<int,int>> a()
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
@@ -70,6 +67,5 @@ void solve(){
         cin>>c[i];
         mx[i]=max({a[i],b[i],c[i]});
     }
-    sort(mx,mx+n);
-    cout<<mx[n-1]+mx[n-2]+mx[n-3];
+    
 }
