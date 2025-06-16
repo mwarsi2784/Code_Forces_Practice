@@ -53,6 +53,20 @@ signed main(){
 }
 
 
+int fun(vector<pair<int,pair<int,int>>> d){
+
+    for(int i=0;i<9;i++){
+        for(int j=0;j<9;j++){
+            for(int k=0;k<n;k++){
+                int day1=d[i].S.S;
+                int day1=d[j].S.S;
+                int day1=d[k].S.F;
+                int type=d[i].S.F
+            }
+        }
+    }
+}
+
 void solve(){
     int n;
     cin>>n;
@@ -80,9 +94,10 @@ void solve(){
         d.pb(a[i]);
     }
     for(int i=n-1;i>=n-3;i--){
-        d.pb(a[i]);
+        d.pb(b[i]);
     }
     for(int i=n-1;i>=n-3;i--){
-        d.pb(a[i]);
+        d.pb(c[i]);
     }
+    cout<<fun(d);
 }
