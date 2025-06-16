@@ -75,18 +75,18 @@ void solve(){
     bool two=false;
     bool three=false;
     int ans=0;
-    for(int i=;i<3*n;i++){
+    for(int i=3*n-1;i>=0;i--){
         int x=a[i].F;
         int y=a[i].S;
-        if(y==1 && one==false){
+        if((y==1) && (one==false)){
             one =true;
             ans+=x;
         }
-        else if(y==2 && two==false){
+        else if((y==2) && (two==false)){
             two =true;
             ans+=x;
         }
-        else if(y==3 && three==false){
+        else if((y==3) && (three==false)){
             three =true;
             ans+=x;
         }
