@@ -73,5 +73,5 @@ void solve(){
         cin>>t;
         c[i]={t,3};
     }
-    cout<<ans;
+    
 }
