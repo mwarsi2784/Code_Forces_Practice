@@ -56,7 +56,6 @@ signed main(){
 void solve(){
     int n;
     cin>>n;
-    vector<pair<int,pair<int,int>>> a;
     int t;
     for(int i=0;i<n;i++){
         cin>>t;
