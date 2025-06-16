@@ -56,44 +56,48 @@ signed main(){
 void solve(){
     int n;
     cin>>n;
-    vector<pair<int,int>> a;
+    vector<pair<int,pair<int,int>> a;
     int t;
     for(int i=0;i<n;i++){
         cin>>t;
-        a.pb({t,1});
+        a.pb({t,{1,i}});
     }
    for(int i=0;i<n;i++){
         cin>>t;
-        a.pb({t,2});
+        a.pb({t,{2,i}});
     }
    for(int i=0;i<n;i++){
         cin>>t;
-        a.pb({t,3});
+        a.pb({t,{3,i}});
     }
     sort(a.begin(),a.end());
     bool one=false;
     bool two=false;
     bool three=false;
+    vector<bool> day(n,false);
     int ans=0;
     int cnt=0;
     for(int i=3*n-1;i>=0;i--){
         int x=a[i].F;
-        int y=a[i].S;
-        if((y==1) && (one==false)){
+        int y=a[i].S.F;
+        int z=a[i].S.S;
+        if((y==1) && (one==false) && (day[z]==false)){
             one =true;
             ans+=x;
-            cnt++;
+            day[z]=true;
             deb2(x,y);
         }
         else if((y==2) && (two==false)){
             two =true;
             ans+=x;
-            cnt++;
+            day[z]=true;
+            deb2(x,y);
         }
         else if((y==3) && (three==false)){
             three =true;
             ans+=x;
-            cnt++;
+            day[z]=true;
+            deb2(x,y);
         }
     }
     cout<<ans;
