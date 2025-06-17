@@ -75,6 +75,16 @@ void solve(){
     }
     int a=arr[1];
     int b=arr[n];
-    int c=b-a;
-
+    pair<int,int> xy=solveXY(a,b,n);
+    if(xy.F==-1 || xy.S==-1){
+        cout<<"NO";
+        return;
+    }
+    for(int i=1;i<=n;i++){
+        if(arr[i]-i*xy.F-(n-i+1)*xy.S!=0){
+            cout<<"NO";
+            return;
+        }
+    }
+    cout<<"YES";
 }
