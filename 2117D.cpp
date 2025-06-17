@@ -76,7 +76,7 @@ void solve(){
     int a=arr[1];
     int b=arr[n];
     pair<int,int> xy=solveXY(a,b,n);
-    if(xy.F==-1 || xy.S==-1){
+    if(xy.F<0 || xy.S<0){
         cout<<"NO";
         return;
     }
@@ -86,5 +86,6 @@ void solve(){
             return;
         }
     }
+    // deb2(xy.F,xy.S);
     cout<<"YES";
 }
