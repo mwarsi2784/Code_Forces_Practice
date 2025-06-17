@@ -54,5 +54,12 @@ signed main(){
 
 
 void solve(){
-    
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int a=arr[0];
+    int b=arr[n-1];
 }
