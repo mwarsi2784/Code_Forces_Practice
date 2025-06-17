@@ -52,6 +52,19 @@ signed main(){
     return 0;
 }
 
+std::pair<int, int> solveXY(int a, int b, int n) {
+    int denominator = 1 - n * n;
+    if (denominator == 0) return {-1, -1}; 
+
+    double x = static_cast<double>(a - b * n) / denominator;
+    double y = static_cast<double>(b - a * n) / denominator;
+
+    if (std::floor(x) != x || std::floor(y) != y) {
+        return {-1, -1};
+    }
+
+    return {static_cast<int>(x), static_cast<int>(y)};
+}
 
 void solve(){
     int n;
@@ -63,5 +76,5 @@ void solve(){
     int a=arr[1];
     int b=arr[n];
     int c=b-a;
-    
+
 }
