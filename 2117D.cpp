@@ -62,4 +62,6 @@ void solve(){
     }
     int a=arr[1];
     int b=arr[n];
+    int c=b-a;
+    
 }
