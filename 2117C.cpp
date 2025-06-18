@@ -64,11 +64,17 @@ void solve(){
     for(int i=1;i<n;){
         int c=curr.size();
         set<int> neww;
-        while(c>0){
+        while(i<n && c>0){
             if((curr.find(a[i])!=curr.end()) && (neww.find(a[i])==neww.end())){
                 c--;
             }
             neww.insert(a[i]);
+            i++;
+        }
+        if(c==0){
+            ans++;
+            curr=neww;
         }
     }
+    cout<<ans;
 }
