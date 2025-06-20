@@ -52,6 +52,12 @@ signed main(){
     return 0;
 }
 
+pair<int,char> fun(char t1,char t2, char t3,char t4){
+    int ans=0;
+    char t=max(max(t1,t2),max(t3,t4));
+    ans=ans+(t-t1)+(t-t2)+(t-t3)+(t-t4);
+    return {ans,t};
+}
 
 void solve(){
     int n;
