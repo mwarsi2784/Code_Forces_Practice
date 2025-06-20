@@ -71,7 +71,7 @@ void solve(){
     int ans=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
-            char t1=a[i][j];   //that element
+            char t1=a[i][j];
             char t2=a[n-j-1][i];  
             char t3=a[n-i-1][n-j-1];
             char t4=a[j][n-i-1];
