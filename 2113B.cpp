@@ -56,5 +56,5 @@ signed main(){
 void solve(){
     int w,h,a,b;
     cin>>w>>h>>a>>b;
-    
+    int 
 }
