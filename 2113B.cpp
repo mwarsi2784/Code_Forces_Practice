@@ -60,7 +60,7 @@ void solve(){
     cin>>x1>>y1>>x2>>y2;
 
     if(x1==x2){
-        if((y1-y2)%b==0){
+        if(abs(y1-y2)%b==0){
             cout<<"Yes";
             return;
         }
@@ -68,13 +68,17 @@ void solve(){
         return;
     }
     if(y1==y2){
-        if((x1-x2)%b==0){
+        if(abs(x1-x2)%a==0){
             cout<<"Yes";
             return;
         }
         cout<<"No";
         return;
     }
-    if((x1-x2)%a==0 || (y2-y1)%a==0)
+    if( abs(x1-x2)%a==0 || abs(y2-y1)%a==0){
+        cout<<"Yes";
+        return;
+    }
+    cout<<"No";
 
 }
