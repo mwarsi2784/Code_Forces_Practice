@@ -75,7 +75,7 @@ void solve(){
         cout<<"No";
         return;
     }
-    if( abs(x1-x2)%a==0 || abs(y2-y1)%a==0){
+    if( abs(x1-x2)%a==0 || abs(y2-y1)%b==0){
         cout<<"Yes";
         return;
     }
